@@ -1,2 +1,2 @@
 ConnectionStrings: 
-    PricingConnection: User ID=postgres;Password=Password1234;Database="Microservices.Demo.Pricing";Host=microservices.demo.pricing.db;Port=5432
+    ProductConnection: Data Source=microservices.demo.policy.db;Initial Catalog=Microservices.Demo.Policy;Persist Security Info=True;User ID=sa;Password=Password1234
