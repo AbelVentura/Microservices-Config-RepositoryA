@@ -117,7 +117,7 @@ Routes:
   - DownstreamPathTemplate: /api/Report
     DownstreamScheme: http
     UpstreamPathTemplate: /api/Report
-    ServiceName: Microservices.Demo.Report.API
+    ServiceName: Microservice.Demo.Report.API
     UpstreamHttpMethod:
       - Get
     AuthenticationOptions:
