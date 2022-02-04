@@ -117,11 +117,27 @@ Routes:
             - Get
         AuthenticationOptions:
             AuthenticationProviderKey: ApiSecurityAuthenticationScheme
+#            AllowedScopes:
+#                -      
+        RouteClaimsRequirement:
+            userType: SALESMAN      
+        DangerousAcceptAnyServerCertificateValidator: true
+    -
+        DownstreamPathTemplate: /api/Report
+        DownstreamScheme: http
+        UpstreamPathTemplate: /api/Report
+        ServiceName: Microservice.Demo.Report.API
+        UpstreamHttpMethod: 
+            - Get
+        AuthenticationOptions:
+            AuthenticationProviderKey: ApiSecurityAuthenticationScheme
  #           AllowedScopes:
  #               -      
         RouteClaimsRequirement:
             userType: SALESMAN      
         DangerousAcceptAnyServerCertificateValidator: true
+        AddHeadersToRequest:
+            AgentLogin: Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |
 GlobalConfiguration:
     RequestIdKey: OcRequestId
     AdministrationPath: /administration
