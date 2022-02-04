@@ -1,9 +1,9 @@
 name: Microservice.Demo.Report.API
 profiles:
 - default
-label:
+label: null
 version: 1e5mk55j5555dd61fb0a9c95c93b3999da00099d
-state:
+state: null
 propertySources:
 - name: https://github.com/AbelVentura/Microservices-Config-RepositoryA/blob/Microservice.Demo.Report.API/application.yml
   source:
